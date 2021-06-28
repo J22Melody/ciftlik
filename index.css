@@ -49,10 +49,18 @@ main {
   max-width: 100%;
 }
 
-.English {
+.switch-language {
   position: fixed;
   top: 10px;
   right: 20px;
+}
+
+.hidden {
+  position: absolute !important;
+  height: 1px; width: 1px; 
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 
