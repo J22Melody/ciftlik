@@ -98,10 +98,32 @@ summary::-webkit-details-marker {
 
 .toggle::after {
   content: " \25B8";
+  font-size: 1.4em;
+  line-height: 1.1;
 }
 
 details[open] .toggle::after {
   content: " \25BE";
+}
+
+/* Set the revealed facts apart from the rest of the page. */
+.facts-body {
+  margin: 0.8em 0 1.2em;
+  padding-left: 1.2em;
+  border-left: 2px solid #e2e2e2;
+  color: #4a4a4a;
+}
+
+.facts-body p {
+  margin: 0.9em 0;
+}
+
+.facts-body p:first-child {
+  margin-top: 0;
+}
+
+.facts-body p:last-child {
+  margin-bottom: 0;
 }
 
 .hidden {
