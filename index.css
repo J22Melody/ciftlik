@@ -72,6 +72,38 @@ main {
 }
 
 
+details {
+  margin: 0.5em 0;
+}
+
+summary {
+  cursor: default;
+  list-style: none;
+}
+
+/* Hide the default disclosure triangle (Safari / older Chrome). */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.toggle {
+  cursor: pointer;
+  border-bottom: 1px dashed #1a1a1a;
+}
+
+.toggle:hover {
+  color: #1abc9c;
+  border-bottom-color: #1abc9c;
+}
+
+.toggle::after {
+  content: " \25B8";
+}
+
+details[open] .toggle::after {
+  content: " \25BE";
+}
+
 .hidden {
   position: absolute !important;
   height: 1px; width: 1px; 
